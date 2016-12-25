@@ -33,6 +33,8 @@ Data Preperation:
 1) Aggregated the Revenue, Number of bookings data at a Year, Quarter, Month, Region level
 2) I have added external factors like Monthly global production of crude steel, U.S. Gross Output
 
+#Doubt - Why is sampling taken?
+
 Mdelling:
 1) I Have used Linear Regression modelling
 2) Nested predictions was used. Predictions of the initial months was considered for the preictions of the later months
