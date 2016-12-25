@@ -1,1 +1,52 @@
-# Travel-Management-Company
+Problem statement:
+
+Initial State:
+Prediction of Revenue, Number of bookings for a Travel Management company happens solely with the historical data and basic ecconomic indicators such as GDP.
+
+Desired Final State:
+1) A forecasting model that predicts indicators for 0-90 days and also for up to 365 days, by including internal and external data.
+2) Identified relevant segmentations of data to enhance analytics
+
+
+Questions:
+1) What are the internal and external factors to include for predicting the Revenue, Number of bookings?
+2) What is the metric to determine the predictions of Revenue, Number of bookings?
+3) How can the data be segmented to create meaningful insights?
+
+Approach:
+Followed the 6 stage framework of CRISP Data Mining process
+
+Business understanding:
+
+1) Business travel contributes $1.18 trillion to the global economy 
+2) Business Travel and Expenditures is often the second highest controllable annual expense for a company
+3) Predicting the Revenue, Number of bookings will help the company to allocate the resources more efficiently
+
+Data understanding
+
+1) The data is a longitudinal. It has the Transaction ID, month, year, date of booking, # of tickets booked, Region of booking, GDP of the booking region
+2) The dataset consists of 50000 instances ranging across 4 years
+
+Data Preperation:
+
+1) identied external factos whihc will be useful for the predictions gauging it across Relevance and Accessibility
+1) Aggregated the Revenue, Number of bookings data at a Year, Quarter, Month, Region level
+2) I have added external factors like Monthly global production of crude steel, U.S. Gross Output
+
+Mdelling:
+1) I Have used Linear Regression modelling
+2) Nested predictions was used. Predictions of the initial months was considered for the preictions of the later months
+3) Have created a R Shiny application to predict the targetss at various levels of business
+
+Clustering - I have implemented time series hierarchial clustering to identify groups of customers in the data which behave similarly.
+There were significant insights about the customers in eawch cluster
+
+Evaluation:
+1) Have used the metric Error rate to evaluate the difference of Actual and predicted number of shares
+2) Baseline -
+
+Deployment:
+1) The R shiny application can be used by deploying thhe same in the Travel Management company. Multiple users can access if its on a cloud sharing platform like AWS or R server
+2) It can also be automated so that on a monthly basis when the data changes, the predictions can be produced and used. We can connect the model to the platform from where the data is stored
+
+
