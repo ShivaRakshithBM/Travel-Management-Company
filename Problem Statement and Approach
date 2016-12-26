@@ -44,8 +44,8 @@ Clustering - I have implemented time series hierarchial clustering to identify g
 There were significant insights about the customers in eawch cluster
 
 Evaluation:
-1) Have used the metric Error rate to evaluate the difference of Actual and predicted number of shares
-2) Baseline -
+1) Have used the metric Error rate to evaluate the difference of Actual and predicted number of shares. 
+2) Have also kept RMSe and MAE as the avoalable options for evaluation of the baggages
 
 Deployment:
 1) The R shiny application can be used by deploying thhe same in the Travel Management company. Multiple users can access if its on a cloud sharing platform like AWS or R server
