@@ -49,3 +49,6 @@ Evaluation:
 Deployment (Next Steps):
 1) The R shiny application can be used by deploying the same in the Travel Management company. Multiple users can access if its on a cloud sharing platform like AWS or R server
 2) It can also be automated so that on a monthly basis when the data changes, the predictions can be produced and used. We can connect the model to the platform from where the data is stored
+
+Learnings:
+R shiny interactive features - Reactive, selectinput, renderplot
