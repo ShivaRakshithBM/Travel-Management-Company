@@ -51,4 +51,5 @@ Deployment (Next Steps):
 2) It can also be automated so that on a monthly basis when the data changes, the predictions can be produced and used. We can connect the model to the platform from where the data is stored
 
 Learnings:
-R shiny interactive features - Reactive, selectinput, renderplot
+1) R shiny interactive features - Reactive, selectinput, renderplot
+2) Addition of external factors into the clients dataset and use it for the further analysis
