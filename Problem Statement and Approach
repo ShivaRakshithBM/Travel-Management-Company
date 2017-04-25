@@ -47,7 +47,7 @@ I have used Box Jenkins standard approach for time series forecasting
 	a. Residuals
 6) Forecasting 
 
-Nested predictions was used. Predictions of the initial months was considered for the preictions of the later months
+Have built Holts winters Seasonal and Seasonal ARIMA models. Nested predictions was used. Predictions of the initial months was considered for the preictions of the later months
 Have created a R Shiny application to predict the targets variables
 
 Clustering - I have implemented time series hierarchial clustering to identify groups of customers in the data which behave similarly.
