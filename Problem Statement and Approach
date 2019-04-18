@@ -1,7 +1,8 @@
 Problem statement:
 
 Initial State:
-Prediction of Revenue, Number of bookings for a Travel Management company happens solely with the historical data and basic ecconomic indicators such as GDP.
+Prediction of Revenue, Number of bookings for a Travel Management company happens solely with the historical data and basic ecconomic 
+indicators such as GDP.
 
 Desired Final State:
 1) A forecasting model that predicts indicators for 0-90 days and also for up to 365 days, by including internal and external data
@@ -23,12 +24,14 @@ Business understanding:
 
 Data understanding
 
-1) The data is a longitudinal. It has the Transaction ID, month, year, date of booking, # of tickets booked, Region of booking, GDP of the booking region
+1) The data is a longitudinal. It has the Transaction ID, month, year, date of booking, # of tickets booked, Region of booking, GDP
+of the booking region
 2) The dataset consists of ~50000 instances ranging across 4 years
 
 Data Preperation:
 
-1) Identied external factors which will be useful for the predictions gauging it across Relevance and Accessibility from majority voting method
+1) Identied external factors which will be useful for the predictions gauging it across Relevance and Accessibility from majority 
+voting method
 2) Aggregated the Revenue, Number of bookings data at a Year, Quarter, Month, Region level
 3) I have added external factors like Monthly global production of crude steel, U.S. Gross Output
 
@@ -47,15 +50,17 @@ I have used Box Jenkins standard approach for time series forecasting
 	a. Residuals
 6) Forecasting 
 
-Have built Holts winters Seasonal and Seasonal ARIMA models. Nested predictions was used. Predictions of the initial months was considered for the preictions of the later months
+Have built Holts winters Seasonal and Seasonal ARIMA models. Nested predictions was used. Predictions of the initial months was 
+considered for the preictions of the later months
 Have created a R Shiny application to predict the targets variables
 
 Clustering - I have implemented time series hierarchial clustering to identify groups of customers in the data which behave similarly.
-There were significant insights about the customers in eawch cluster
+There were significant insights about the customers in each cluster
 
 Evaluation:
-1) Have used the metric RMSEto evaluate the difference of Actual and predicted revenues
-2) Baseline model which was created was the mean of the Revenue at the level of data analysis. Post which the above mentioned evaluation metrics were applied for comparison
+1) Have used the metric RMSE to evaluate the difference of Actual and predicted revenues
+2) Baseline model which was created was the mean of the Revenue at the level of data analysis. Post which the above mentioned evaluation
+metrics were applied for comparison
 
 Deployment (Next Steps):
 1) The R shiny application can be used by deploying the same in the Travel Management company. Multiple users can access if its on a cloud sharing platform like AWS or R server
